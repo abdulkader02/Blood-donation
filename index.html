@@ -1,0 +1,194 @@
+index.html
+
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Finder</title><link rel="stylesheet" href="style.css">
+
+</head>
+<body><!-- Navigation -->
+<header>
+    <nav>
+
+        <h2>🩸 Blood Donation Finder</h2>
+
+        <!-- Hamburger Button -->
+        <button id="menuBtn" class="menu-btn">
+            ☰
+        </button>
+
+        <ul id="navMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#register">Become Donor</a></li>
+            <li><a href="#search">Search</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<!-- Home -->
+<section id="home" class="hero">
+
+    <div class="hero-text">
+        <h1>Donate Blood, Save Lives</h1>
+
+        <p>
+            A single blood donation can save up to three lives.
+            Join our donor community today.
+        </p>
+
+        <a href="#register" class="btn">
+            Become a Donor
+        </a>
+
+    </div>
+
+</section>
+
+<!-- About -->
+
+<section id="about" class="about">
+
+    <h2>About This Project</h2>
+
+    <p>
+        Blood Donation Finder is a beginner-friendly web application
+        made using HTML, CSS and JavaScript.
+
+        Users can register as donors and search donors
+        by blood group.
+    </p>
+
+</section>
+
+<!-- Registration -->
+
+<section id="register">
+
+    <h2>Become a Blood Donor</h2>
+
+    <form id="donorForm">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Full Name"
+            required
+        >
+
+        <input
+            type="tel"
+            id="phone"
+            placeholder="Phone Number"
+            required
+        >
+
+        <input
+            type="text"
+            id="city"
+            placeholder="City"
+            required
+        >
+
+        <select id="blood" required>
+
+            <option value="">Select Blood Group</option>
+
+            <option>A+</option>
+            <option>A-</option>
+
+            <option>B+</option>
+            <option>B-</option>
+
+            <option>AB+</option>
+            <option>AB-</option>
+
+            <option>O+</option>
+            <option>O-</option>
+
+        </select>
+
+        <button type="submit">
+            Register
+        </button>
+
+    </form>
+
+</section>
+
+<!-- Search -->
+
+<section id="search">
+
+    <h2>Find Blood Donor</h2>
+
+    <select id="searchBlood">
+
+        <option value="">Choose Blood Group</option>
+
+        <option>A+</option>
+        <option>A-</option>
+
+        <option>B+</option>
+        <option>B-</option>
+
+        <option>AB+</option>
+        <option>AB-</option>
+
+        <option>O+</option>
+        <option>O-</option>
+
+    </select>
+
+    <button id="searchBtn">
+        Search
+    </button>
+
+    <div id="result"></div>
+
+</section>
+
+<!-- Emergency -->
+
+<section class="emergency">
+
+    <h2>Emergency Blood Request</h2>
+
+    <p>
+        If you urgently need blood,
+        contact registered donors
+        through the search option.
+    </p>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+
+    <h2>Contact</h2>
+
+    <p>Email : bloodfinder@gmail.com</p>
+
+    <p>Phone : +880 1234-567890</p>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+    <p>
+        © 2026 Blood Donation Finder
+        | Made with HTML CSS JavaScript
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

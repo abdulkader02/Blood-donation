@@ -1,0 +1,320 @@
+style.css :
+
+
+/* Reset */
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+/* Smooth Scroll */
+
+html{
+scroll-behavior: smooth;
+}
+
+/* Body */
+
+body{
+background: #f5f5f5;
+color: #333;
+}
+
+/* Navbar */
+
+header{
+background: #d62828;
+color: white;
+padding: 15px 8%;
+}
+
+nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+nav ul{
+display: flex;
+list-style: none;
+}
+
+nav ul li{
+margin-left: 20px;
+}
+
+nav ul li a{
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+nav ul li a:hover{
+color: yellow;
+}
+
+/* Hamburger Button */
+
+.menu-btn{
+display: none;
+background: none;
+border: none;
+color: white;
+font-size: 30px;
+cursor: pointer;
+}
+
+/* Hero */
+
+.hero{
+background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url("https://images.unsplash.com/photo-1615461066841-6116e61058f4?auto=format&fit=crop&w=1200&q=80");
+background-size: cover;
+background-position: center;
+height: 90vh;
+
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+color: white;
+
+}
+
+.hero h1{
+font-size: 50px;
+margin-bottom: 15px;
+}
+
+.hero p{
+font-size: 18px;
+margin-bottom: 20px;
+}
+
+.btn{
+display: inline-block;
+background: #d62828;
+color: white;
+padding: 12px 25px;
+text-decoration: none;
+border-radius: 5px;
+}
+
+.btn:hover{
+background: #b30000;
+}
+
+/* Sections */
+
+section{
+padding: 60px 8%;
+}
+
+section h2{
+text-align: center;
+margin-bottom: 20px;
+color: #d62828;
+}
+
+/* About */
+
+.about p{
+text-align: center;
+max-width: 700px;
+margin: auto;
+line-height: 1.7;
+}
+
+/* Form */
+
+form{
+max-width: 500px;
+margin: auto;
+
+display: flex;
+flex-direction: column;
+
+}
+
+form input,
+form select{
+padding: 12px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+form button{
+padding: 12px;
+border: none;
+background: #d62828;
+color: white;
+cursor: pointer;
+border-radius: 5px;
+font-size: 16px;
+}
+
+form button:hover{
+background: #b30000;
+}
+
+/* Search */
+
+#search{
+text-align: center;
+}
+
+#search select{
+padding: 12px;
+width: 220px;
+}
+
+#search button{
+padding: 12px 20px;
+margin-left: 10px;
+background: #d62828;
+color: white;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+}
+
+#search button:hover{
+background: #b30000;
+}
+
+#result{
+margin-top: 30px;
+}
+
+/* Donor Card */
+
+.card{
+background: white;
+padding: 20px;
+margin: 15px auto;
+max-width: 450px;
+border-left: 6px solid #d62828;
+border-radius: 8px;
+box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+
+.card h3{
+color: #d62828;
+margin-bottom: 10px;
+}
+
+.card p{
+margin: 5px 0;
+}
+
+/* Emergency */
+
+.emergency{
+background: #ffe5e5;
+text-align: center;
+}
+
+/* Contact */
+
+#contact{
+text-align: center;
+}
+
+#contact p{
+margin: 10px 0;
+}
+
+/* Footer */
+
+footer{
+background: #222;
+color: white;
+text-align: center;
+padding: 20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+    padding: 15px 5%;
+}
+
+nav{
+    flex-direction: row;
+    position: relative;
+}
+
+nav h2{
+    font-size: 20px;
+}
+
+/* Show Hamburger */
+
+.menu-btn{
+    display: block;
+}
+
+/* Hide Menu Initially */
+
+nav ul{
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+
+    background: #d62828;
+
+    flex-direction: column;
+    padding: 10px 0;
+
+    z-index: 1000;
+}
+
+/* Show Menu When Active */
+
+nav ul.active{
+    display: flex;
+}
+
+nav ul li{
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li a{
+    display: block;
+    padding: 12px;
+}
+
+nav ul li a:hover{
+    background: #b30000;
+    color: white;
+}
+
+.hero{
+    height: 80vh;
+}
+
+.hero h1{
+    font-size: 35px;
+}
+
+.hero p{
+    font-size: 16px;
+    padding: 0 15px;
+}
+
+#search button{
+    margin-top: 15px;
+    margin-left: 0;
+}
+
+}
